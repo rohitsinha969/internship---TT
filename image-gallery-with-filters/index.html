@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image-Gallery</title>
+    <script src="https://kit.fontawesome.com/abc7088fe4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+
+        <section class="upperBox">
+            <div class="container">
+                <h1>Image Gallery...</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, necessitatibus temporibus! Officia sunt vero consequuntur natus ratione placeat perferendis eum!</p>
+                <div class="search-container">
+                    <input type="text" placeholder="hey😎, what are you looking for ?">
+                    <!-- <select name="Filters" id="filter">
+                        <option value="all">All</option>
+                        <option value="books">Books</option>
+                        <option value="phones">Phones</option>
+                        <option value="places">Places</option>
+                        <option value="shoes">Shoes</option>
+                    </select> -->
+                    <button class="search-btn" onclick="functionPrompt()"><ion-icon class="icon" name="search-outline"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="lowerBox">
+            <div class="container grid">
+                <img class="image1" data-items="books" src="/images-used-min/places1-min.jpg" alt="book image">
+                <img class="image2" data-items="books" src="/images-used-min/book1-min.jpg" alt="book image">
+                <img class="image3" data-items="books" src="/images-used-min/shoes2-min.jpg" alt="book image">
+                <img class="image4" data-items="books" src="/images-used-min/places-min.jpg" alt="book image">
+                <img class="image5" data-items="books" src="/images-used-min/places1-min.jpg" alt="book image">
+                <img class="image6" data-items="books" src="/images-used-min/places-min.jpg" alt="book image">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
