@@ -1,10 +1,15 @@
-navbar	-> home/about/coffees/shop/blog/contact + login - signin/signup + search bar(no specific function)
+
+hamburger menu
+    |-> navbar
+        |-> home/about/coffee/shop/blog/contact + login - signin/signup + search bar(no specific function)
 
 coffee section - categories
-			|-> Coffee
-			|-> Beans
-			|-> Pastries	
-				 - carousel/slider
+			    |-> Coffee
+			    |-> Beans
+			    |-> Pastries	
+				        |-> carousel/slider
+
+
 
 footer - contact details - mailto/phone + social media integration
                                             |-> fb/insta/x/linkedin

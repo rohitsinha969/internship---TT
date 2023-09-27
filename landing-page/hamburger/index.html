@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+
+    <style>
+        /* :root{
+            font-size: 16px;
+        } */
+        main {
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+
+        button {
+            width: 200px;
+            height: 200px;
+            border: none;
+            background-color: lightblue;
+        }
+
+        .bar,
+        .hamburger::after,
+        .hamburger::before {
+            content: "";
+            width: 60%;
+            height: 1.5rem;
+            background: grey;
+            display: block;
+            /* margin: 0 auto; */
+            /* margin: inline; */
+            margin-inline: auto;
+            margin-block: 1.5rem;
+            /* padding-block: 1.5rem; */
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .bar {
+            width: 90%;
+        }
+
+        .hamburger.is-active::after {
+            /* transform-origin: center; */
+            transform: translateY(-36px) rotate(-45deg);
+            /* transform: translate(0, -175%) rotate(-45deg); */
+        }
+        
+        .hamburger.is-active::before {
+            /* transform-origin: center; */
+            transform: translateY(36px) rotate(45deg);
+            /* transform: translate(0, 175%) rotate(45deg); */
+        }
+        /* .hamburger.is-active::after {
+            transform: translate(0, -175%) rotate(-45deg);
+        }
+
+        .hamburger.is-active::before {
+            transform: translate(0, 175%) rotate(45deg);
+        } */
+
+        .hamburger.is-active .bar {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </main>
+
+    <script src="hamburger.js"></script>
+</body>
+
+</html>
