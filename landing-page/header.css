@@ -10,7 +10,7 @@
     background: #b48868;
     /* justify-content: space-between; */
     /* align-items: center; */
-    padding: 0 0.5rem;
+    padding: 0 2rem;
     /* margin-bottom: 60px; */
     /* border-bottom: 1px solid cornflowerblue; */
 }
@@ -83,7 +83,7 @@
     background: rgba(180, 136, 104, 0.5);
     width: 100%;
     padding-block: 1.5rem;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     /* bottom: unset; */
     display: flex;
